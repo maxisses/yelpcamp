@@ -70,8 +70,9 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 
 
-// start a web server
-app.listen(5000, function(){
-   console.log("The YelpCamp Server Has Started!");
+// start a web server (Heroku needs the "PORT" variable)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
 

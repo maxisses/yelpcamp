@@ -18,10 +18,10 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require("./routes/index");
 
     //local DB
-// mongoose.connect("mongodb://127.0.0.1:27017/yelp_camp");
+mongoose.connect("mongodb://127.0.0.1:27017/yelp_camp");
 
     // remote MongoDB ATLAS
-mongoose.connect("mongodb+srv://maxisses:spackone180@yelpcampfam-carrx.mongodb.net/test?retryWrites=true&w=majority");
+// mongoose.connect("mongodb+srv://maxisses:spackone180@yelpcampfam-carrx.mongodb.net/test?retryWrites=true&w=majority");
 
 
 app.use(flash());
